@@ -1,0 +1,251 @@
+.App {
+  text-align: center;
+}
+.rectangle_element{
+    background-color: #f1f1f1;
+    border: 1px solid #D8D8D8;
+    height: 200px;
+}
+input[type=text]{
+  width: 95%;
+}
+input[type=radio]{
+  width: 95%;
+}
+input[type=checkbox]{
+  width: 95%;
+}
+input[type=password]{
+  width: 95%;
+}
+textarea{
+  width: 95%;
+}
+.side_forms_group{
+  margin-left: 5%;
+}
+.data_count{
+      font-size: 15px;
+    margin-left: 10px;
+    color: white;
+}
+.side_forms_group li{
+  margin-left: 3%;
+}
+.form_name{
+  margin: 1px 0px;
+}
+.tree-view_item{
+  margin: 2px 0px;
+  background-color: grey; 
+  font-size: 30px;
+    font-weight: bold;
+}
+.label_div{
+  font-weight: bold;
+}
+.sub_node{
+      font-size: 25px;
+    color: white;
+}
+.edit_div{
+  padding-top: 2px;
+}
+.grid_view{
+  border: 1px solid;
+}
+body {
+  font-family: "Gotham";
+}
+
+@xs_only: ~"screen and (max-width: 599px)";
+@sm: ~"screen and (min-width: 600px)";
+
+@light_grey_bg: #fafafa;
+@light_grey_border: #ddd;
+  
+.responsive-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+    
+  thead {
+    visibility: hidden;
+    background: @light_grey_bg;
+    @media @sm {
+      visibility: visible;
+    }
+  }
+  
+  tr {
+    border: 1px solid @light_grey_border;
+    border-bottom: 2px solid @light_grey_border;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    @media @sm {
+      display: table-row;
+      border-bottom-width: 1px;
+      margin-bottom: 0;
+      
+      &:nth-child(even) {
+        background: @light_grey_bg;
+      }
+    }
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+    
+  td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-bottom: 1px dotted @light_grey_border;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+      
+    @media @sm {
+      display: table-cell;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: none;
+    }
+  }
+    
+  td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    @media @sm {
+      content: "";
+      display: none;
+    }
+  }
+}
+.element_li{
+  margin: 1px;
+  border: 1px solid #fff;
+  font-size: 25px;
+}
+.react-grid-item{
+  height: 100px;
+}
+.action_icon{
+    width: 15px;
+    margin: 5px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.actions_div{
+  float: right;
+}
+.actions_div:hover{
+  visibility: visible;
+}
+
+.side_div{
+      float: left;
+    border: 1px solid;
+    width: auto;
+    min-height: 100vh;
+    text-align: left;
+}
+.button_look{
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+.static_html_element{
+      width: 94%;
+    height: 25px;
+}
+.right_pane{
+    text-align: left;
+    /*padding-left: 5%;*/
+    border: 1px solid;
+    min-height: 100vh;
+    float: left;
+    min-width: 79%;
+}
+.static_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 1% 0%;
+    width: 99%;
+    background-color: #f1f1f1;
+}
+select{
+      width: 165px;
+}
+.radio_span{
+  margin-right: 16px;
+}
+.static_ul li{
+      display: list-item;
+    text-align: -webkit-match-parent;
+    cursor: pointer;
+}
+.static_ul li:hover{
+      display: list-item;
+    text-align: -webkit-match-parent;
+    cursor: pointer;
+    background-color: #D8D8D8;
+    cursor: 
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 75px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+.element_div{
+  margin: 10px;
+}
+.action_link{
+    margin: 8px;
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.head_logo{
+      float: left;
+      cursor: pointer;  
+      font-size: 50px;
+}
+.students_table{
+    margin: 100px;
+    border: 1px solid;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
